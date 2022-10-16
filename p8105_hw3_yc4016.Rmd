@@ -42,3 +42,10 @@ instacart =
   as_tibble(instacart)
 ```
 
+
+#### Description
+* The size of the dataset `instacart` is `r dim(instacart)` 
+* The dataset `instacart` contains `r nrow(instacart)` rows and `r ncol(instacart)` with each row resprenting a single product from an instacart order.
+* The key variables include `r names(instacart)`
+* In total, there are `r instacart %>% select(product_id) %>% distinct %>% count` products found in `r instacart %>% select(user_id, order_id) %>% distinct %>% count` orders from `r instacart %>% select(user_id) %>% distinct %>% count` distinct users.
+
