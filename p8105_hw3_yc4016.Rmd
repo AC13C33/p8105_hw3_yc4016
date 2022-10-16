@@ -133,3 +133,22 @@ accelerometers
 * The dataset `accelerometers` contains `r nrow(accelerometers)` rows and `r ncol(accelerometers)`
 * The key variables include `r names(accelerometers)`
 
+
+#### Question Prompt
+Traditional analyses of accelerometer data focus on the total activity over the day. Using your tidied dataset, aggregate across minutes to create a total activity variable for each day, and create a table showing these totals. Are any trends apparent?
+
+
+```{r}
+accelerometers_table =
+accelerometers %>% 
+  group_by(week, day) %>% 
+  summarize(total_activity = sum(counts)) %>% 
+  pivot_wider(
+    names_from = "day",
+    values_from = "total_activity") %>% 
+  select (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) %>% 
+  knitr::kable()
+
+accelerometers_table
+```
+
