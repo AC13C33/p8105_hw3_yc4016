@@ -42,7 +42,6 @@ instacart =
   as_tibble(instacart)
 ```
 
-
 #### Description
 * The size of the dataset `instacart` is `r dim(instacart)` 
 * The dataset `instacart` contains `r nrow(instacart)` rows and `r ncol(instacart)` with each row resprenting a single product from an instacart order.
@@ -58,4 +57,8 @@ instacart %>%
   count(aisle) %>% 
   arrange(desc(n))
 ```
+
+#### Description
+* In total, there are 134 aisles, with fresh vegetables and fresh fruits holding the most items ordered by far.
+
 
