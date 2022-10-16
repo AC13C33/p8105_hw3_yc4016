@@ -108,7 +108,6 @@ instacart %>%
 # Problem 2
 
 #### Question Prompt
-
 Load, tidy, and otherwise wrangle the data. Your final dataset should include all originally observed variables and values; have useful variable names; include a weekday vs weekend variable; and encode data with reasonable variable classes. Describe the resulting dataset (e.g. what variables exist, how many observations, etc).
 
 ```{r}
@@ -128,4 +127,9 @@ accelerometers =
   
 accelerometers
 ```
+
+#### Description
+* The size of the dataset `accelerometers` is `r dim(accelerometers)` 
+* The dataset `accelerometers` contains `r nrow(accelerometers)` rows and `r ncol(accelerometers)`
+* The key variables include `r names(accelerometers)`
 
