@@ -49,3 +49,13 @@ instacart =
 * The key variables include `r names(instacart)`
 * In total, there are `r instacart %>% select(product_id) %>% distinct %>% count` products found in `r instacart %>% select(user_id, order_id) %>% distinct %>% count` orders from `r instacart %>% select(user_id) %>% distinct %>% count` distinct users.
 
+
+#### Question Prompt
+How many aisles are there, and which aisles are the most items ordered from?
+
+```{r}
+instacart %>% 
+  count(aisle) %>% 
+  arrange(desc(n))
+```
+
