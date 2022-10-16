@@ -152,3 +152,7 @@ accelerometers %>%
 accelerometers_table
 ```
 
+#### Description
+* It seems that the weekends has lower value than weekdays. 
+
+
