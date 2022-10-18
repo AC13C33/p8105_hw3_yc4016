@@ -214,5 +214,17 @@ ny_noaa %>%
 ny_noaa_df
 ```
 
+```{r}
+snow_frequency = 
+  ny_noaa %>% 
+  count(snow, name = "frequency") %>% 
+  arrange(desc(frequency))
+
+snow_frequency
+```
+
+#### Description
+* For snowfall, "0" is the most commonly observed values with frequency 2008508. 
+
 
 
