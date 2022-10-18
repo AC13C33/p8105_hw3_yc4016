@@ -190,5 +190,11 @@ library(p8105.datasets)
 data("ny_noaa")
 ```
 
+#### Description
+* The size of the dataset `ny_noaa` is `r dim(ny_noaa)` 
+* The dataset `ny_noaa` contains `r nrow(ny_noaa)` rows and `r ncol(ny_noaa)`
+* The key variables include `r names(ny_noaa)`
+
+
 
 
