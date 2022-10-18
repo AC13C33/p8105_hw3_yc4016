@@ -246,6 +246,7 @@ ny_noaa_df %>%
 ny_noaa_plot
 ```
 
+
 #### Description
 * Both January and July data have outliers 
 * For January the trend of average max temperature is changing (increasing and decreasing) across years.
