@@ -265,7 +265,6 @@ plot_1 =
   labs(title = "tmax vs tmin", 
        x = "tmax", 
        y = "tmin")
-
 plot_2 =
   ny_noaa_df %>% 
   filter (snow > 0 & snow < 100) %>% 
@@ -274,7 +273,5 @@ plot_2 =
   labs(title = "Distribution of snowfall values greater than 0 and less than 100 separately by year", 
        x = "snowfall", 
        y = "density")
-
 plot_1 + plot_2
 ```
-
